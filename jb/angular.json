@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "jbui": "apps/jbui",
+    "jbui-e2e": "apps/jbui-e2e"
+  }
+}

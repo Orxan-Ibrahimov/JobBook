@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+//base
+@import 'assets/styles/base/color.scss';
+@import 'assets/styles/base/reset.scss';
+
+@import "primeicons/primeicons.css";
+// shared
+@import 'assets/styles/shared/navbar.scss';

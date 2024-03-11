@@ -2,6 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: var(--jb-navbar-bg);
+  z-index: 100;
+  box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.2);
+  //   flex-wrap: wrap;
   padding: 6px 6%;
   & > .navbar-left {
     display: flex;
@@ -9,8 +15,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 280px;
-    & > .navbar-logo {
-      width: 50px;
+    & > .nav-brand {
+      & > .navbar-logo {
+        width: 50px;
+      }
     }
 
     & > .search-box {
@@ -76,20 +84,20 @@
       }
     }
 
-    & > .online{
-        position: relative;
-        display: inline-block;
+    & > .online {
+      position: relative;
+      display: inline-block;
 
-        &::after{
-            content: '';
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: var(--jb-online);
-        }
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--jb-online);
+      }
     }
   }
 }

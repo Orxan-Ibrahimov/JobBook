@@ -52,7 +52,7 @@
         }
         & > .sidebar-profile-links {
           display: flex;
-          border-top: 1px solid var(--jb-border);
+          border-top: 2px solid var(--jb-border);
 
           & > .sidebar-profile-link {
             flex-basis: 50%;
@@ -64,7 +64,7 @@
             transition: background-color 0.3s;
 
             &:nth-of-type(1) {
-              border-right: 1px solid var(--jb-border);
+              border-right: 2px solid var(--jb-border);
             }
 
             &:hover {
@@ -88,10 +88,12 @@
         background-color: #fff;
         border-radius: 1rem;
         overflow: hidden;
-        padding: 0 25px;
+
         margin: 1rem 0;
         & > .sidebar-list {
-            margin: 2rem 0;
+          margin: 2rem 0;
+          padding: 0 25px;
+
           & > .sidebar-list-title {
             font-size: 1.5rem;
             margin: 1rem 0;
@@ -116,8 +118,22 @@
             }
           }
         }
-      }
-      & > .discover-more {
+
+        & > .discover-more {
+          display: flex;
+          justify-content: center;
+          border-top: 2px solid var(--jb-border);
+          padding: 1rem 0;
+          & > .discover {
+            color: var(--jb-sidebar-text);
+            font-size: 1.2rem;
+            text-align: center;
+            transition: color .3s;
+            &:hover{
+                color: var(--jb-link-hover);
+            }
+          }
+        }
       }
     }
   }

@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ShellComponent } from './components/shared/shell/shell.component';
 import { SidebarComponent } from './components/pages/sidebar/sidebar.component';
 import { SidebarProfileBoxComponent } from './components/pages/sidebar/sidebar-profile-box/sidebar-profile-box.component';
+import { SidebarActivityBoxComponent } from './components/pages/sidebar/sidebar-activity-box/sidebar-activity-box.component';
 
 const routes: Routes = [{ path: '', component: ShellComponent }];
 @NgModule({
@@ -18,6 +19,7 @@ const routes: Routes = [{ path: '', component: ShellComponent }];
     ShellComponent,
     SidebarComponent,
     SidebarProfileBoxComponent,
+    SidebarActivityBoxComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],

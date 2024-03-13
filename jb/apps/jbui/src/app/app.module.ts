@@ -11,6 +11,7 @@ import { SidebarProfileBoxComponent } from './components/pages/sidebar/sidebar-p
 import { SidebarActivityBoxComponent } from './components/pages/sidebar/sidebar-activity-box/sidebar-activity-box.component';
 import { SidebarNewsBoxComponent } from './components/pages/sidebar/sidebar-news-box/sidebar-news-box.component';
 import { RightSidebarComponent } from './components/pages/sidebar/right-sidebar/right-sidebar.component';
+import { SidebarAdvertisionComponent } from './components/pages/sidebar/sidebar-advertision/sidebar-advertision.component';
 
 const routes: Routes = [{ path: '', component: ShellComponent }];
 @NgModule({
@@ -24,6 +25,7 @@ const routes: Routes = [{ path: '', component: ShellComponent }];
     SidebarActivityBoxComponent,
     SidebarNewsBoxComponent,
     RightSidebarComponent,
+    SidebarAdvertisionComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],

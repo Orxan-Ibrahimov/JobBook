@@ -6,9 +6,11 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ShellComponent } from './components/shared/shell/shell.component';
-import { SidebarComponent } from './components/pages/sidebar/sidebar.component';
+import { LeftSidebarComponent } from './components/pages/sidebar/left-sidebar.component';
 import { SidebarProfileBoxComponent } from './components/pages/sidebar/sidebar-profile-box/sidebar-profile-box.component';
 import { SidebarActivityBoxComponent } from './components/pages/sidebar/sidebar-activity-box/sidebar-activity-box.component';
+import { SidebarNewsBoxComponent } from './components/pages/sidebar/sidebar-news-box/sidebar-news-box.component';
+import { RightSidebarComponent } from './components/pages/sidebar/right-sidebar/right-sidebar.component';
 
 const routes: Routes = [{ path: '', component: ShellComponent }];
 @NgModule({
@@ -17,9 +19,11 @@ const routes: Routes = [{ path: '', component: ShellComponent }];
     NavbarComponent,
     FooterComponent,
     ShellComponent,
-    SidebarComponent,
+    LeftSidebarComponent,
     SidebarProfileBoxComponent,
     SidebarActivityBoxComponent,
+    SidebarNewsBoxComponent,
+    RightSidebarComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],

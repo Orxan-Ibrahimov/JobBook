@@ -1,11 +1,14 @@
 .container {
   display: flex;
+  justify-content: space-between;
   padding: 20px 6%;
+
 
   & > .left-sidebar {
     flex-basis: 25%;
+    align-self: flex-end;
 
-    & .sidebar {
+    & .sidebar-left {
       & .sidebar-profile-box {
         background-color: #fff;
         border-radius: 1rem;
@@ -136,5 +139,5 @@
         }
       }
     }
-  }
+  } 
 }

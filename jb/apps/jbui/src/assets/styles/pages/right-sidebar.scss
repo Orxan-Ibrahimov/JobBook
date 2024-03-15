@@ -32,6 +32,11 @@
             font-size: 14px;
             font-weight: 700;
             color: #000;
+            transition: color .3s;
+
+            &:hover{
+              color: var(--jb-link-hover);
+            }
           }
 
           & > .news-detail {
@@ -122,6 +127,11 @@
           color: var(--jb-sidebar-text);
           font-size: 14px;
           font-weight: 700;
+          transition: color .3s;
+
+          &:hover{
+            color: var(--jb-link-hover);
+          }
         }
       }
     }

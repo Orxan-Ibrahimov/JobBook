@@ -72,6 +72,16 @@
           }
         }
       }
+
+      & > .active {
+        & > .navbar-menu-link {
+          color: var(--jb-link-hover);
+        }
+        &::after {
+          content: '';
+          width: 100%;
+        }
+      }
     }
   }
 

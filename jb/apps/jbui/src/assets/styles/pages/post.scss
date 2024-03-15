@@ -1,0 +1,112 @@
+.post-create {
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  & > .post-create-input-box {
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+
+    & > .post-profile {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+    }
+
+    & > .post-input {
+      width: 100%;
+      background-color: transparent;
+      resize: none;
+      border: none;
+      outline: none;
+      display: flex;
+      align-items: center;
+      margin: 1rem 0;
+      // padding: 1.5rem 1rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+
+      &::placeholder {
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  & > .post-create-links {
+    display: flex;
+    & > .post-item {
+      flex-basis: 25%;
+      border-right: 2px solid var(--jb-border);
+      border-top: 2px solid var(--jb-border);
+      & > .post-link {
+        display: flex;
+        padding: 0.5rem 1rem;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: var(--jb-buton-hover);
+        }
+
+        & > .post-icon {
+          color: var(--jb-link-hover);
+          font-size: 1.5rem;
+          margin: 0 0.5rem;
+        }
+
+        & > .post-title {
+          color: var(--jb-sidebar-text);
+        }
+      }
+
+      & > .post-btn {
+        background-color: var(--jb-link-hover);
+
+        & > .post-icon,
+        & > .post-title {
+          color: #fff;
+        }
+
+        &:hover {
+          background-color: var(--jb-link-hover);
+        }
+      }
+    }
+  }
+}
+
+.post-sort{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+
+    & > .sort{
+        display: flex;
+        padding-left: 1rem;
+
+        & > .sort-title{
+           width: max-content;
+        }
+
+        & > .sort-btn{
+            font-weight: 700;
+            display: flex;
+            padding-left: .5rem;
+
+            & > .sort-icon{
+                margin-left: .3rem;
+            }
+        }
+    }
+
+    hr{
+        width: 100%;
+        height: 2px;
+    }
+
+   
+}

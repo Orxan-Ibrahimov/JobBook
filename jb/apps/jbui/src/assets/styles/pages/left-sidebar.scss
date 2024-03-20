@@ -3,11 +3,11 @@
   justify-content: space-between;
   padding: 20px 6%;
 
-
   & > .left-sidebar {
     flex-basis: 25%;
-    align-self: flex-end;
-
+    align-self: flex-start;
+    position: sticky;
+    top: 75px;
     & .sidebar-left {
       & .sidebar-profile-box {
         background-color: #fff;
@@ -131,13 +131,13 @@
             color: var(--jb-text);
             font-size: 1.2rem;
             text-align: center;
-            transition: color .3s;
-            &:hover{
-                color: var(--jb-link-hover);
+            transition: color 0.3s;
+            &:hover {
+              color: var(--jb-link-hover);
             }
           }
         }
       }
     }
-  } 
+  }
 }

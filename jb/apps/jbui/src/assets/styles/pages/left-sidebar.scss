@@ -34,7 +34,7 @@
 
           & > .sidebar-profile-job {
             font-size: 1.2rem;
-            color: var(--jb-sidebar-text);
+            color: var(--jb-text);
             margin: 0.5rem 0;
           }
 
@@ -45,7 +45,7 @@
               justify-content: space-between;
               margin: 0.5rem 0;
               font-size: 1.3rem;
-              color: var(--jb-sidebar-text);
+              color: var(--jb-text);
 
               .sidebar-statistic-primary {
                 color: var(--jb-link-hover);
@@ -62,7 +62,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: var(--jb-sidebar-text);
+            color: var(--jb-text);
             padding: 1rem 0;
             transition: background-color 0.3s;
 
@@ -112,7 +112,7 @@
             }
 
             & > .sidebar-link {
-              color: var(--jb-sidebar-text);
+              color: var(--jb-text);
               transition: color 0.3s;
 
               &:hover {
@@ -128,7 +128,7 @@
           border-top: 2px solid var(--jb-border);
           padding: 1rem 0;
           & > .discover {
-            color: var(--jb-sidebar-text);
+            color: var(--jb-text);
             font-size: 1.2rem;
             text-align: center;
             transition: color .3s;

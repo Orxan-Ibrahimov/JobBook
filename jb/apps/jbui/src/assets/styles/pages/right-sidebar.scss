@@ -40,7 +40,7 @@
           }
 
           & > .news-detail {
-            color: var(--jb-sidebar-text);
+            color: var(--jb-text);
             margin: 0.2rem 0;
 
             // & > .news-date {
@@ -81,7 +81,7 @@
     }
 
     & > .sidebar-advertision-text {
-      color: var(--jb-sidebar-text);
+      color: var(--jb-text);
       font-size: 14px;
       font-weight: 700;
       margin: 1rem 0;
@@ -124,7 +124,7 @@
       & > .sidebar-link-item {
         margin: .5rem .2rem;
         & > .sidebar-link {
-          color: var(--jb-sidebar-text);
+          color: var(--jb-text);
           font-size: 14px;
           font-weight: 700;
           transition: color .3s;
@@ -139,7 +139,7 @@
     & > .sidebar-copyright{
       margin: 1rem 0;
       & > .sidebar-footer-text{
-        color: var(--jb-sidebar-text);
+        color: var(--jb-text);
         font-size: 14px;
         font-weight: 700;
 

@@ -1,0 +1,143 @@
+.post-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 1rem;
+
+  & > .post-header {
+    display: flex;
+    align-items: flex-start;
+
+    & > .post-profile {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    & > .post-sender-details {
+      margin: 0 1rem;
+      & > .post-title {
+        margin-bottom: 0.3rem;
+        font-size: 1.5rem;
+      }
+
+      & > .post-job,
+      & > .post-date {
+        color: var(--jb-text);
+      }
+    }
+  }
+  & > .post-body {
+    & > .post-image {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+    & > .post-text {
+      color: var(--jb-text);
+      margin: 1rem 0;
+    }
+
+    & > .post-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & > .post-actions {
+        display: flex;
+        align-items: center;
+        margin: 0.2rem;
+        & > .post-action {
+          display: inline-block;
+          position: relative;
+          width: 25px;
+          height: 25px;
+          font-size: 0.8rem;
+          border-radius: 50%;
+          color: #fff;
+          margin: -5px;
+
+          & > i {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+        & > .post-like {
+          background-color: var(--jb-link-hover);
+        }
+        & > .post-love {
+          background-color: var(--jb-red);
+        }
+
+        & > .post-share {
+          background-color: var(--jb-online);
+        }
+
+        & > .post-actions-text {
+          color: var(--jb-text);
+          margin: 0 0.5rem;
+        }
+      }
+
+      & > .post-details-text {
+        color: var(--jb-text);
+      }
+    }
+  }
+  & > .post-footer {
+    border-top: 2px solid var(--jb-border);
+    margin: .5rem 0;
+
+    & > .post-action-list {
+      display: flex;
+      & > .post-action-item {
+        flex-basis: 20%;
+        & > .post-action-link {
+          display: flex;
+          padding: 0.5rem 1rem;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+
+          &:hover {
+            background-color: var(--jb-gray);
+            & > .post-action-icon {
+              color: #fff;
+            }
+            & > .post-action-title {
+              color: #fff;
+            }
+          }
+
+          & > .post-action-icon {
+            color: var(--jb-gray);
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+          }
+
+          & > .post-action-title {
+            color: var(--jb-text);
+          }
+        }
+
+        & > .post-action-link-special {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;        
+            padding-right: 2rem;    
+            height: 100%;
+          & > .post-action-image {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+          }
+
+          & > .post-action-user-icon{
+            margin: 0 .3rem;
+          }
+        }
+      }
+    }
+  }
+}

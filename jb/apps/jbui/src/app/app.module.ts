@@ -14,6 +14,7 @@ import { RightSidebarComponent } from './components/pages/sidebar/right-sidebar/
 import { SidebarAdvertisionComponent } from './components/pages/sidebar/sidebar-advertision/sidebar-advertision.component';
 import { SidebarFooterComponent } from './components/pages/sidebar/sidebar-footer/sidebar-footer.component';
 import { PostCreateComponent } from './components/pages/main/post/post-create/post-create.component';
+import { PostItemComponent } from './components/pages/main/post/post-item/post-item.component';
 
 const routes: Routes = [{ path: '', component: ShellComponent }];
 @NgModule({
@@ -30,6 +31,7 @@ const routes: Routes = [{ path: '', component: ShellComponent }];
     SidebarAdvertisionComponent,
     SidebarFooterComponent,
     PostCreateComponent,
+    PostItemComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],

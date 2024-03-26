@@ -1,7 +1,7 @@
 <div class="navbar">
   <div class="navbar-left">
     <a href="" class="nav-brand">
-        <img src="assets/images/download.png" class="navbar-logo" alt="logo" />
+      <img src="assets/images/download.png" class="navbar-logo" alt="logo" />
     </a>
     <div class="search-box">
       <i class="pi pi-search"></i>
@@ -36,8 +36,61 @@
     </ul>
   </div>
   <div class="navbar-right">
-    <a href="" class="account online">
+    <a class="account online" (click)="ProfileToggle()">
       <img src="assets/images/profile.jpg" class="account-img" alt="profile" />
     </a>
+  </div>
+
+  <div class="profile-menu" [ngClass]="{'hide': !isProfileShow}">
+    <div class="profile-header">
+      <img
+        src="assets/images/profile.jpg"
+        class="profile-image"
+        alt="profile"
+      />
+      <div class="profile-info">
+        <h3 class="profile-title">Rayan Walton</h3>
+        <p class="profile-sub-text">See your profile</p>
+      </div>
+    </div>
+    <div class="profile-body">
+      <ul class="profile-params-list">
+        <li class="profile-params-item">
+          <a href="#" class="profile-params-link">
+            <span class="profile-params-icon"><i class="pi pi-flag-fill"></i></span>
+            <p>Give feedback</p>
+            <span class="arrow-icon"><i class="pi pi-angle-right"></i></span>
+          </a>
+        </li>
+        <li class="profile-params-item">
+          <a href="#" class="profile-params-link">
+            <span class="profile-params-icon"><i class="pi pi-cog"></i></span>
+            <p>Settings & Privacy</p>
+            <span class="arrow-icon"><i class="pi pi-angle-right"></i></span>
+          </a>
+        </li>
+        <li class="profile-params-item">
+          <a href="#" class="profile-params-link">
+            <span class="profile-params-icon"><i class="pi pi-question-circle"></i></span>
+            <p>Help & Support</p>
+            <span class="arrow-icon"><i class="pi pi-angle-right"></i></span>
+          </a>
+        </li>
+        <li class="profile-params-item">
+          <a href="#" class="profile-params-link">
+            <span class="profile-params-icon"><i class="pi pi-moon"></i></span>
+            <p>Display & Accessibility</p>
+            <span class="arrow-icon"><i class="pi pi-angle-right"></i></span>
+          </a>
+        </li>
+        <li class="profile-params-item">
+          <a href="#" class="profile-params-link">
+            <span class="profile-params-icon"><i class="pi pi-sign-out"></i></span>
+            <p>Logout</p>
+            <span class="arrow-icon"><i class="pi pi-angle-right"></i></span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>

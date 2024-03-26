@@ -15,8 +15,12 @@ import { SidebarAdvertisionComponent } from './components/pages/sidebar/sidebar-
 import { SidebarFooterComponent } from './components/pages/sidebar/sidebar-footer/sidebar-footer.component';
 import { PostCreateComponent } from './components/pages/main/post/post-create/post-create.component';
 import { PostItemComponent } from './components/pages/main/post/post-item/post-item.component';
-
-const routes: Routes = [{ path: '', component: ShellComponent }];
+import { ProfileMainComponent } from './components/pages/main/profile/profile-main/profile-main.component';
+import { ProfileComponent } from './components/pages/main/profile/profile.component';
+const routes: Routes = [
+  { path: '', component: ShellComponent },
+  { path: 'profile', component: ProfileComponent },
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +36,8 @@ const routes: Routes = [{ path: '', component: ShellComponent }];
     SidebarFooterComponent,
     PostCreateComponent,
     PostItemComponent,
-  ],
+    ProfileMainComponent,
+    ProfileComponent  ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
   bootstrap: [AppComponent],

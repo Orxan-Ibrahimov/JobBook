@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   constructor() {}
-
+  isProfileShow:boolean = false;
   ngOnInit(): void {}
+
+
+
+  ProfileToggle(){
+    this.isProfileShow = !this.isProfileShow;
+  }
 }
